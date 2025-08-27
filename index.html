@@ -1,24 +1,267 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 3 6to Primaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 3: Vibe Coding: Dirigiendo al Genio del Código</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Resumen de la Misión</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Definir el concepto de Vibe Coding Avanzado: el diálogo para dirigir a una IA en la generación de código textual (Python/JavaScript).</li>
+                                        <li>Interactuar con Xolo para aprender el protocolo de colaboración, entendiendo su rol como "programador IA" y el del estudiante como "director y auditor".</li>
+                                        <li>Comprender la importancia de no confiar ciegamente en el código de la IA y la necesidad de leerlo y depurarlo.</li>
+                                        <li>Ejecutar exitosamente el primer ciclo de Vibe Coding: Vibe -> Prompt -> Código IA -> Implementación en MakeCode -> Prueba.</li>
+                                    </ul>
+                                    <strong>Secuencia de la Sesión (40 min):</strong>
+                                    <ol>
+                                        <li>El Salto al Código Real: Introducción al Vibe Coding Avanzado (10 min)</li>
+                                        <li>El Protocolo de Colaboración: Aprendiendo a Trabajar con Xolo (10 min)</li>
+                                        <li>Primer Gnius Storm: Mi Animación Personal (15 min)</li>
+                                        <li>Cierre de Misión: Eres el Director (5 min)</li>
+                                    </ol>
+                                    <strong>Entregable Clave de la Sesión:</strong>
+                                    <ul>
+                                        <li>Un proyecto funcional en MakeCode que muestra una animación personalizada de las iniciales del estudiante, creado íntegramente con código Python o JavaScript generado por Xolo.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Dispositivos (laptops/tablets) con acceso a Gnius Space y MakeCode.</li>
+                                        <li>Presentación de diapositivas para la sesión.</li>
+                                        <li>Un Micro:bit por estudiante o por pareja para pruebas físicas (opcional, el simulador es suficiente para esta sesión).</li>
+                                    </ul>
+                                    <strong>Preparación Previa del Facilitador:</strong>
+                                    <ol>
+                                        <li>Asegurarse de que todos los estudiantes puedan acceder a Xolo a través de Gnius Space.</li>
+                                        <li>Familiarizarse con la interfaz de MakeCode para alternar entre la vista de Bloques y la de Python/JavaScript. Es crucial saber dónde hacer clic para mostrar esto con fluidez.</li>
+                                        <li>Realizar el ejercicio de la "Animación Personal" uno mismo antes de la clase para anticipar cualquier posible pregunta o punto de confusión.</li>
+                                        <li>Tener a mano un ejemplo de código de Xolo con un error simple (ej. un `pause` faltante) para mostrarlo si el tiempo lo permite y reforzar el concepto de depuración.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: El Salto al Código Real: Introducción al Vibe Coding Avanzado ⏰ 10 minutos</h2>
+                <p>Establecer la transición de los bloques al código textual como un emocionante "ascenso de nivel".</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Lenguaje de los Creadores ⏰ 5 minutos</h3>
+                            <p>(Proyectar una diapositiva que muestre una imagen de bloques de MakeCode a la izquierda y un fragmento de código Python/JavaScript a la derecha, con una flecha grande que indique una evolución).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola de nuevo, directores! Hasta ahora, en años anteriores, han usado bloques para dar instrucciones. Los bloques son fantásticos, son como las piezas de LEGO de la programación: fáciles de ver y de unir. Pero los verdaderos arquitectos de software, los que construyen las aplicaciones y los sistemas que usan todos los días, no usan bloques. Usan esto. (Señala el código textual). Esto es código. Es el lenguaje universal de la creación digital. Es más rápido, más poderoso y infinitamente más flexible. Hoy, ustedes darán el salto. Van a empezar a trabajar con el lenguaje real de los creadores.<br><br>Y no lo harán solos. Tienen a Xolo, su copiloto IA. Pero su relación con él también va a evolucionar. Xolo ya no les dará un simple plan o pseudocódigo. Ahora, Xolo se convierte en su programador junior. Él escribirá el código por ustedes. Pero aquí viene la parte más importante y la que los convertirá en verdaderos líderes tecnológicos...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Domando al Genio: Tu Rol como Director y Auditor ⏰ 5 minutos</h3>
+                            <p>(Proyectar una diapositiva con el título "No Confíes en la IA Ciegamente" y una imagen de un detective con una lupa sobre un código).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Xolo es un genio. Es increíblemente rápido y sabe muchísimo. Pero no es perfecto. A veces, puede malinterpretar una instrucción. A veces, puede olvidar un pequeño detalle. A veces, simplemente, ¡comete errores! Piénsenlo así: si ustedes fueran los directores de una película y le pidieran al equipo de efectos especiales una escena de una explosión, no se irían a casa sin verla, ¿verdad? Se quedarían, la revisarían, pedirían cambios, se asegurarían de que fuera exactamente como la imaginaron.<br><br>Con el código de Xolo es igual. Su trabajo a partir de hoy cambia. Ya no son solo los que tienen la 'idea' o el 'vibe'. Ahora son los <strong>Directores del Proyecto y los Auditores de Calidad</strong>. Su misión es: primero, dar una instrucción clara a Xolo. Segundo, recibir el código que él genera. Y tercero, y más importante, <strong>leerlo, entenderlo y verificarlo</strong>. Aprenderán a ser los detectives de su propio código, a encontrar los errores y a ser los responsables finales del producto. Dirigir a la IA es un superpoder, pero requiere supervisión. Hoy, aprenderán cómo supervisar a su genio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: El Protocolo de Colaboración: Aprendiendo a Trabajar con Xolo ⏰ 10 minutos</h2>
+                <p>Instrucción directa sobre CÓMO interactuar con Xolo, aprendiendo el proceso de trabajo en sí.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Primera Directiva Formal ⏰ 5 minutos</h3>
+                            <p>(Proyectar una diapositiva con el prompt exacto para iniciar la conversación).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, directores. Para empezar a trabajar de manera profesional, necesitamos un protocolo claro. Su primera tarea es pedirle a su copiloto que les explique las reglas de colaboración. Abran a Xolo en su Gnius Space y escriban esta instrucción exacta. Esto es aprender a hablar el idioma de la dirección de proyectos.<br><br><strong>(En pantalla):</strong><br><pre class="dialogue assistant" style="background-color: #f0f0f0; border-left: 3px solid #666; padding: 10px; font-family: monospace;">Xolo, soy [Tu Nombre]. Como mi copiloto IA, necesito que me expliques en detalle nuestro protocolo de trabajo para crear proyectos con código en MakeCode. Detalla cuál es tu rol como programador y cuál es mi rol como director y auditor. Explícame paso a paso cómo pasaremos de mi 'vibe' a un programa funcionando.</pre><br>Tómense un minuto para escribirlo y lean con muchísima atención la respuesta que les va a dar. Es el manual de operaciones para todo el año.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Análisis de la Respuesta de Xolo ⏰ 5 minutos</h3>
+                            <p>(El facilitador da tiempo para que Xolo responda y luego guía la discusión sobre la respuesta, proyectando una respuesta de ejemplo).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Todos deberían tener una respuesta de Xolo. Debería parecerse a esto. (Muestra una respuesta ideal de Xolo en pantalla). Analicémosla juntos.<br><br>
+                                    <strong>Ejemplo de Respuesta de Xolo (para el facilitador):</strong>
+                                    <blockquote class="dialogue assistant" style="border-left: 3px solid #4CAF50; padding-left: 15px; margin-left: 10px; font-style: italic;">
+                                        ¡Saludos, Director [Nombre]! Estoy listo para co-crear. Aquí está nuestro protocolo de colaboración:<br><br>
+                                        <strong>1. Mi Rol (Tu Programador IA):</strong>
+                                        <ul>
+                                            <li>Yo recibiré tu "vibe" o tu idea, y la traduciré a código funcional en Python o JavaScript para MakeCode.</li>
+                                            <li>Mi objetivo es escribir un código limpio y eficiente que cumpla con tu petición.</li>
+                                            <li>Si tu idea es muy compleja, te pediré que la dividamos en partes más pequeñas para construirla paso a paso.</li>
+                                        </ul>
+                                        <strong>2. Tu Rol (El Director y Auditor de Calidad):</strong>
+                                        <ul>
+                                            <li><strong>Tu responsabilidad principal es tener una visión clara (el "vibe").</strong></li>
+                                            <li><strong>NO debes confiar ciegamente en mi código.</strong> Tu trabajo es LEERLO para entenderlo. Al principio te guiaré para que sepas qué buscar.</li>
+                                            <li><strong>Eres el responsable de COPIAR mi código y PEGARLO</strong> en el editor de MakeCode.</li>
+                                            <li><strong>Eres el responsable de PROBAR y DEPURAR.</strong> Si algo no funciona, tu misión es describirme el problema para que juntos encontremos la solución.</li>
+                                        </ul>
+                                        <strong>3. Nuestro Proceso (Ciclo de Vibe Coding):</strong>
+                                        <ul>
+                                            <li><strong>Paso A (TÚ):</strong> Me describes tu 'vibe' de la forma más clara posible.</li>
+                                            <li><strong>Paso B (YO):</strong> Te genero el código completo.</li>
+                                            <li><strong>Paso C (TÚ):</strong> Copias el código, vas a MakeCode, cambias al editor de texto (JavaScript o Python) y lo pegas.</li>
+                                            <li><strong>Paso D (TÚ):</strong> Pruebas el programa en el simulador o en tu Micro:bit y verificas si hace lo que querías. Si no, ¡comienza el debugging!</li>
+                                        </ul>
+                                    </blockquote>
+                                <br>Como ven, está muy claro. ¿Quién es el responsable final del proyecto? ¡Ustedes! ¿Cuál es el trabajo más importante que tienen que hacer con el código de Xolo? ¡Leerlo y probarlo! Ahora que conocemos las reglas, vamos a ponerlas en práctica.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Primer Gnius Storm: Mi Animación Personal ⏰ 15 minutos</h2>
+                <p>La primera aplicación práctica del nuevo protocolo, buscando un éxito rápido y tangible.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Definiendo el "Vibe" ⏰ 3 minutos</h3>
+                            <p>Formular y comunicar la idea inicial a la IA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Nuestro primer proyecto es crear una animación personalizada en el Micro:bit. El objetivo es simple: queremos que la pantalla LED muestre nuestras iniciales, una después de la otra, en un bucle infinito. Por ejemplo, si mi nombre es Carlos Pérez, mi 'vibe' sería: <strong>'Quiero que la pantalla del Micro:bit muestre una 'C', espere un segundo, se borre la pantalla, muestre una 'P', espere un segundo, se borre, y repita este proceso para siempre'</strong>. Ahora, formulen su propio 'vibe' con sus iniciales y díctenselo a Xolo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Generación y Análisis del Código ⏰ 5 minutos</h3>
+                            <p>Recibir el código de la IA y practicar el rol de auditor.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Xolo les entregará un bloque de código. ¡No lo copien aún! Tómense dos minutos para cumplir con su rol de auditores. Intenten leerlo. Busquen sus iniciales dentro del código. Busquen palabras que reconozcan, como `show character`, `pause` o `forever`. Comparen lo que leen con la idea original que tenían. ¿Parece que el plan del código coincide con su 'vibe'? Este es el paso más importante: empezar a familiarizarse con la lectura del código.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Implementación y Prueba ⏰ 7 minutos</h3>
+                            <p>Llevar el código al entorno de desarrollo y verificar su funcionamiento.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, la parte técnica. Les mostraré en la pantalla cómo hacerlo. Primero, copien TODO el código que les dio Xolo. Ahora, vayan a su proyecto de MakeCode. En la parte superior, verán unos botones para cambiar entre 'Bloques' y 'JavaScript' o 'Python'. Hagan clic en el de texto. Les advertirá que los bloques se pueden perder, acepten. Borren todo el código que aparece por defecto y peguen el código de Xolo. ¡Listo! Ahora ejecuten el simulador. Deberían ver su animación personal funcionando. ¡Felicidades, han dirigido su primer proyecto de código textual!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Cierre de Misión: Eres el Director ⏰ 5 minutos</h2>
+                <p>Reforzar los logros de la sesión y conectar su experiencia con el rol profesional que están empezando a encarnar.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Recapitulación y Avance</h3>
+                            <p>Consolidar el aprendizaje y generar anticipación para la siguiente misión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Directores, deténganse un momento y miren lo que han logrado! Han completado su primer ciclo completo de Vibe Coding avanzado. Le dieron una orden a una Inteligencia Artificial, la supervisaron, auditaron su trabajo y la implementaron para crear un producto digital funcional. Esto, a pequeña escala, es lo que hacen los líderes de equipos de ingeniería en empresas como Google o Microsoft todos los días.<br><br>Hoy han aprendido la habilidad más importante para el futuro: no solo saber programar, sino saber dirigir a quienes programan, incluso si es una IA. Han demostrado que son capaces de tomar el código de un genio y hacerlo realidad. A partir de aquí, los proyectos se volverán más complejos, los códigos más largos y su rol como directores y auditores será cada vez más crucial. En nuestra próxima sesión, descubriremos el sistema de recompensas que acompaña a esta gran responsabilidad. ¡Excelente trabajo, equipo! Misión cumplida.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
